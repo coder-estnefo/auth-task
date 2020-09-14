@@ -1,0 +1,25 @@
+<div class="login-section">
+    
+        <h3>Login with</h3>
+        <button class="btn" (click)="facebookLogin()">Facebook</button><hr>
+        <button class="btn" (click)="googleLogin()">Google</button><hr>
+        <button class="btn" routerLink="/phone-login">phone number</button><hr>
+        <button class="btn" routerLink="/email-login">Email and Password</button><hr>
+        OR
+        
+        <h3>Sign up</h3>
+        <form [formGroup]="user" (ngSubmit)="signUp(user)">
+            <label for="email" class="label">Email</label>
+            <input id="email" class="input" type="email" placeholder="enter email"
+                formControlName="email" required>
+        
+            <label for="password" class="label">Password</label>
+            <input id="password" class="input" type="password" placeholder="enter password"
+                formControlName="password" minlength="6" required>
+            
+            <br><br>
+
+            <button class="btn" [disabled]="user.invalid">Sign up</button>
+        </form>
+    
+</div>

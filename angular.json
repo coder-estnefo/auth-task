@@ -121,8 +121,13 @@
               "devServerTarget": "login-task:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "login-task"
 }

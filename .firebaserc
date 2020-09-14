@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mock-01": {
+      "hosting": {
+        "login-task": [
+          "mock-01"
+        ]
+      }
+    }
+  }
+}
