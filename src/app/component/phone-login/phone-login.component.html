@@ -1,11 +1,17 @@
 <div class="login-section">
     <h3>Log in</h3>
-    <form [formGroup]="user">
-        <label for="phone" class="label">Phone number</label>
-        <input id="phone" class="input" type="text" placeholder="enter phone number"
-            formControlName="phone" required>
-            
-        <br><br>
-        <button class="btn" [disabled]="user.invalid">Login</button>
-    </form>
+    <label for="phone">Phone number</label>
+    <input id="phone" type="text" class="input" [(ngModel)]="phone"
+        placeholder="e.g +27123456789">
+
+    <div id="recaptcha-container"></div>
+
+    <button class="input" (click)="sendLoginCode()">Send Code</button>
+
+    <div *ngIf="">
+        <label for="code">Verification Code</label>
+        <input id="code" type="text" class="input" [(ngModel)]="code">
+        <button class="input" (click)="verifyLoginCode()">Verify Code</button>
+    </div>
+
 </div>

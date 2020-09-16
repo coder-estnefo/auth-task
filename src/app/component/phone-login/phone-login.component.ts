@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { LoginAuthService } from 'src/app/service/login-auth.service';
+import { LoginAuthService } from 'src/app/service/login-auth.service';;
 
 @Component({
   selector: 'app-phone-login',
@@ -9,17 +8,21 @@ import { LoginAuthService } from 'src/app/service/login-auth.service';
 })
 export class PhoneLoginComponent implements OnInit {
 
-  user: FormGroup;
-
-  constructor(
-    private formBuilder: FormBuilder,
-    private loginAuthService: LoginAuthService
-  ) { }
+  phone;
+  code;
+  
+  constructor(private loginAuthService: LoginAuthService) { }
 
   ngOnInit(): void {
-    this.user = this.formBuilder.group({
-      phone: ['', Validators.required]
-    });
+    
+  }
+
+  sendLoginCode() {
+    this.loginAuthService.sendCode(this.phone);
+  }
+
+  verifyLoginCode() {
+    this.loginAuthService.verifyCode(this.code);
   }
 
 }

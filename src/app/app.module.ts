@@ -7,6 +7,7 @@ import { LoginComponent } from './component/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
 import { HomeComponent } from './component/home/home.component';
 import { EmailLoginComponent } from './component/email-login/email-login.component';
 import { PhoneLoginComponent } from './component/phone-login/phone-login.component';
@@ -35,7 +36,8 @@ const firebaseConfig = {
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireAuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
