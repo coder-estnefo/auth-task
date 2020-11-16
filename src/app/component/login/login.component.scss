@@ -4,6 +4,7 @@
     margin: 20px auto;
     padding: 20px;
     text-align: center;
+    box-shadow: 8px 8px 32px grey;
 }
 
 .btn, .input {
@@ -12,3 +13,32 @@
     height: 40px;
 }
 
+.btn.fb {
+    background-color: #3b5998;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn.google {
+    background-color: #FF5733;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn.phone {
+    background-color:  #a6a6a6;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn.email {
+    background-color: #d08c49;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.btn.signup {
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+}

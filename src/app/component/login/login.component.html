@@ -1,10 +1,10 @@
 <div class="login-section">
     
         <h3>Login with</h3>
-        <button class="btn" (click)="facebookLogin()">Facebook</button><hr>
-        <button class="btn" (click)="googleLogin()">Google</button><hr>
-        <button class="btn" routerLink="/phone-login">phone number</button><hr>
-        <button class="btn" routerLink="/email-login">Email and Password</button><hr>
+        <button class="btn fb" (click)="facebookLogin()">Facebook</button><hr>
+        <button class="btn google" (click)="googleLogin()">Google</button><hr>
+        <button class="btn phone" routerLink="/phone-login">phone number</button><hr>
+        <button class="btn email" routerLink="/email-login">Email and Password</button><hr>
         OR
         
         <h3>Sign up</h3>
@@ -19,7 +19,7 @@
             
             <br><br>
 
-            <button class="btn" [disabled]="user.invalid">Sign up</button>
+            <button class="btn signup" [disabled]="user.invalid">Sign up</button>
         </form>
     
 </div>
