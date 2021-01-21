@@ -32,13 +32,13 @@ export class LoginAuthService {
   loginEmailPassword(email, password) {
     this.auth
       .signInWithEmailAndPassword(email, password)
-      .then((user) => {
+      .then(() => {
         console.log('email and password successful login');
         this.router.navigateByUrl('/home');
       })
       .catch((error) => {
+        alert('Incorrect Details');
         console.log(error.message);
-        alert('Incorrect Login Details');
       });
   }
 
@@ -124,7 +124,7 @@ export class LoginAuthService {
       })
       .catch((error) => {
         console.log(error.message);
-        alert(error.message);
+        alert('Incorrect Code');
       });
   }
 
