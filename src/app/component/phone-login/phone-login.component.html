@@ -1,17 +1,31 @@
 <div class="login-section">
-    <h3>Log in</h3>
-    <label for="phone">Phone number</label>
-    <input id="phone" type="text" class="input" [(ngModel)]="phone"
-        placeholder="e.g +27123456789">
+  <h3 class="center">Login</h3>
+  <label for="phone" class="label">Phone number</label>
+  <div>
+    <input type="text" value="+27" class="area-code" readonly />
+    <input
+      id="phone"
+      type="number"
+      class="phone-number text"
+      [(ngModel)]="phone"
+      placeholder="e.g 123456789"
+    />
+  </div>
 
-    <div id="recaptcha-container"></div>
+  <div id="recaptcha-container"></div>
 
-    <button class="input" (click)="sendLoginCode()">Send Code</button>
+  <button class="input login" (click)="sendLoginCode()">Send Code</button>
 
-    <div>
-        <label for="code">Verification Code</label>
-        <input id="code" type="text" class="input" [(ngModel)]="code">
-        <button class="input" (click)="verifyLoginCode()">Verify Code</button>
-    </div>
-
+  <div>
+    <label for="code" class="label">Verification Code</label>
+    <input id="code" type="number" class="input text" [(ngModel)]="code" />
+    <button
+      type="button"
+      class="input login"
+      (click)="verifyLoginCode()"
+      [disabled]="verifyDisabled"
+    >
+      Verify Code
+    </button>
+  </div>
 </div>

@@ -1,14 +1,46 @@
 .login-section {
-    border: 1px solid black;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 20px;
 }
 
-.btn, .input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
+.btn,
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
+.text {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn {
+  text-align: center;
+}
+
+.center {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.label {
+  font-size: 1.25rem;
+}
+
+.login {
+  border: none;
+  color: #fff;
+  background-color: #4caf50;
+}

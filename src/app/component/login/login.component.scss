@@ -1,14 +1,69 @@
 .login-section {
-    border: 1px solid black;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
+  border: 1px solid #ccc;
+  background: #f2f2f2;
+  border-radius: 4px;
+  max-width: 400px;
+  margin: 20px auto;
+  padding: 10px 20px;
 }
 
-.btn, .input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
+.btn {
+  text-align: center;
 }
 
+.btn,
+.input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.text {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.center {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.label {
+  font-size: 1.25rem;
+}
+
+.signUp {
+  border: none;
+  color: #fff;
+  background-color: #4caf50;
+}
+
+.fb {
+  border: none;
+  color: #fff;
+  background-color: #2d6da8;
+}
+
+.google {
+  border: none;
+  color: #fff;
+  background-color: #f57b5f;
+}
+
+.phone {
+  border: none;
+  color: #fff;
+  background-color: #5c48cf;
+}
+
+.email {
+  border: none;
+  color: #fff;
+  background-color: #a87531;
+}

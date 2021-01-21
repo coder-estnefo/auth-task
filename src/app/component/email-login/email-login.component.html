@@ -1,15 +1,28 @@
 <div class="login-section">
-    <h3>Log in</h3>
-    <form [formGroup]="user" (ngSubmit)="login(user)">
-        <label for="email" class="label">Email</label>
-        <input id="email" class="input" type="email" placeholder="enter email"
-            formControlName="email" required>
-        
-        <label for="password" class="label">Password</label>
-        <input id="password" class="input" type="password" placeholder="enter password"
-            formControlName="password" minlength="6" required>
-            
-        <br><br>
-        <button class="btn" [disabled]="user.invalid">Login</button>
-    </form>
+  <h3 class="center">Log in</h3>
+  <form [formGroup]="user" (ngSubmit)="login(user)">
+    <label for="email" class="label">Email</label>
+    <input
+      id="email"
+      class="input text"
+      type="email"
+      placeholder="enter email"
+      formControlName="email"
+      required
+    />
+
+    <label for="password" class="label">Password</label>
+    <input
+      id="password"
+      class="input text"
+      type="password"
+      placeholder="enter password"
+      formControlName="password"
+      minlength="6"
+      required
+    />
+
+    <br /><br />
+    <button class="btn login" [disabled]="user.invalid">Login</button>
+  </form>
 </div>
